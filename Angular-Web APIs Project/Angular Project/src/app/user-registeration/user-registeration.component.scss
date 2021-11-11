@@ -1,0 +1,43 @@
+@import "../functions.scss";
+
+@include Breadcrumb();
+
+.log-in
+{
+    color: #696763;
+    h2
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    form
+    {
+        input
+        {
+            background: #F0F0E9;
+            font-size: 14px;
+            font-weight: 300;
+            padding-left: 10px;
+        }
+        .btn
+        {
+            @include buttons();
+            font-weight: bold;
+        }
+    }
+}
+.or
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $Primary_Color;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    line-height: 50px;
+    margin: auto;
+}

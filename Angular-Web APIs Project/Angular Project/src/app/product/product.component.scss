@@ -1,0 +1,133 @@
+@import "../functions.scss";
+
+@include Breadcrumb();
+
+.features-items
+{
+    width: 100%;
+    h2
+    {
+        color: #FE980F;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 15px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+    }
+    h2::after
+    {
+        content: " ";
+        position: absolute;
+        border: 1px solid #f5f5f5;
+        bottom: 8px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        z-index: -2;
+    }
+    h2::before
+    {
+        content: " ";
+        position: absolute;
+        background: #fff;
+        bottom: -6px;
+        width: 220px;
+        height: 30px;
+        z-index: -1;
+        left: 50%;
+        margin-left: -110px;
+    }
+}
+.product-type
+{
+    width: 100%;
+    border: 2px solid #f5f5f5;
+    div
+    {
+        padding: 5px 20px;
+        a
+        {
+            font-size: 13px;
+            color: #696763;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+.Size
+{
+    border: 2px solid #f5f5f5;
+    div
+    {
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        a
+        {
+            text-decoration: none;
+            color: #696763;
+            background: #F0F0E9;
+            text-align: center;
+            padding: 5px 10px;
+            margin-left: 12px;
+            margin-bottom: 5px;
+        }
+        a:hover
+        {
+            background: $Primary_Color;
+        }
+    }
+}
+.Color
+{
+    border: 2px solid #f5f5f5;
+    div
+    {
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        a
+        {
+            text-decoration: none;
+            color: #696763;
+            background: #F0F0E9;
+            text-align: center;
+            padding: 5px 10px;
+            margin-left: 12px;
+            margin-bottom: 5px;
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    .Filter
+    {
+        .btn
+        {
+            background-color: $Primary_Color;
+            color: #FFF;
+            display: inline-block;
+        }
+    }
+    .Filter-Section
+    {
+        display: none;
+    }
+}
+@media screen and (min-width: 991px){
+    .Filter
+    {
+        .btn
+        {
+            display: none;
+        }
+    }
+    .Filter-Section
+    {
+        display: inline-block;
+    }
+}

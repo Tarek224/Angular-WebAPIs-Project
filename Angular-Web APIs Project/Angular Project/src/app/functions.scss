@@ -1,0 +1,155 @@
+$Primary_Color : #FE980F;
+$light_Primary_Color : #fdb45e;
+$Text_Primary_Color : #666663;
+$Text_light_Primary_Color: #8C8C88;
+
+@mixin buttons() {
+    background: #FE980F;
+    border-color: #FE980F;
+    color: white;
+}
+
+@mixin Header() {
+    nav
+    {
+        background-color: #ffffff;
+    }
+    .navbar-toggler-icon
+    {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(254, 152, 15)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-brand
+    {
+        padding: 5px 20px 5px 10px;
+        letter-spacing: 1px;
+        color: #FE980F;
+    }
+    .navbar-brand:hover
+    {
+        color: #FE980F;
+    }
+    .nav-link
+    {
+        color: #696763;
+        letter-spacing: 1px;
+        transition: all 0.4s;
+    }
+    .nav-link:hover
+    {
+        color: #FE980F;
+    }
+    .btn-search
+    {
+        @include buttons();
+    }
+    .dropdown-menu
+    {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .dropdown-menu
+    {
+        li
+        {
+            a
+            {
+                color: #fff;
+            }
+        }   
+    }
+    nav
+    {
+    div
+    {
+            div
+            {
+                ul
+                {
+                    li
+                    {
+                        a.active
+                        {
+                            color: #fdb45e;
+                        }
+                    }
+                }
+            }
+    } 
+    }
+    @media screen and (max-width:991px)
+    {
+        nav
+        {
+            background-color: #F0F0E9;
+        }
+        #cat
+        {
+            display: block;
+            text-align: center;
+            
+        }
+    }
+}
+
+@mixin Categories() {
+    .Categories
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    nav 
+    {
+        div:nth-child(2)
+        {
+            background:#F0F0E9;
+        }
+    }
+    
+    nav 
+    {
+        div:nth-child(2)
+        {
+            div
+            {
+                ul
+                {
+                    margin: auto;
+                }
+            }
+        }
+    }
+    #cat
+    {
+        font-weight: bold;
+        color: #FE980F;
+    }
+}
+
+@mixin Breadcrumb() {
+    
+    .breadcrumb
+    {
+        margin-bottom: 75px;
+        padding: 8px 15px;
+    }
+    .breadcrumb 
+    {
+        li
+        {
+            a
+            {
+                background: #FE980F;
+                color: white;
+                padding: 3px 7px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+        .active
+        {
+            color: #999;
+        }
+    }
+}
+@mixin GetBackGround ($bg){
+    background-color: $bg;
+}

@@ -1,0 +1,26 @@
+<div class="row">
+    <div *ngFor="let product of productsList | paginate: { itemsPerPage: 9, currentPage: page, totalItems: totalLength }"
+        class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="product-card">
+            <div class="product-info text-center">
+                <img src={{imgSource}}{{product.Product_Image}} width="270" height="250">
+                <h2 class="mt-4 mb-4">{{product.Product_Price | currency}}</h2>
+                <p>{{product.Product_Name}}</p>
+                <a class="btn add-to-cart" (click) = "addToCart(product.Product_ID)"><i class="bi bi-cart-plus-fill"></i> Add to cart</a>
+            </div>
+            <div class="product-action">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="bi bi-plus-square-fill"></i> Add Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <button (click)="goToProductDetails(product)" class="nav-link"><i
+                                class="bi bi-plus-square-fill"></i> Details</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<pagination-controls (pageChange)="page = $event" class="my-pagination" previousLabel="" nextLabel="">
+</pagination-controls>

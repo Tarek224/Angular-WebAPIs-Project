@@ -1,0 +1,294 @@
+<!-- -------------------------------Start Cart Shopping --------------------------- -->
+         
+<section class="cart-shopping">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active ps-0" aria-current="page" id="breadcrumb-item">Products</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="col-lg-12 pb-5 text-center">
+                    <img src="../../assets/images/cart/advertisement.jpg" alt="" style="width: 85%;"/>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 Filter-Section">
+                            <section class="features-items py-1 mb-4">
+                                <h2>Product Type</h2>
+                                <div class="product-type pt-2 pb-4">
+                                    <div><a (click) = "gitProductsInType(3)">Jeans</a></div>
+                                    <div><a (click) = "gitProductsInType(3)">Jogger</a></div>
+                                    <div><a (click) = "gitProductsInType(3)">Pants</a></div>
+                                    <div><a (click) = "gitProductsInType(3)">Shoes</a></div>
+                                    <div><a (click) = "gitProductsInType(3)">Short</a></div>
+                                    <div><a (click) = "gitProductsInType(3)">T-shirt</a></div>
+                                    <div><a (click) = "gitProductsInType(3)">Sweat pants</a></div>
+                                </div>
+                            </section>
+                            <section class="features-items py-1">
+                                <h2>Size</h2>
+                                <div class="Size py-3">
+                                    <div>
+                                        <a href="#">31</a>
+                                        <a href="#">32</a>
+                                        <a href="#">33</a>
+                                        <a href="#">34</a>
+                                        <a href="#">36</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">42</a>
+                                        <a href="#">44</a>
+                                        <a href="#">46</a>
+                                        <a href="#">30</a>
+                                        <a href="#">29</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">2XL</a>
+                                        <a href="#">3XL</a>
+                                        <a href="#">L</a>
+                                        <a href="#">XL</a>
+                                        <a href="#">M</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">5XL</a>
+                                        <a href="#">6XL</a>
+                                        <a href="#">4XL</a>
+                                        <a href="#">40</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">38</a>
+                                        <a href="#">12</a>
+                                        <a href="#">14</a>
+                                        <a href="#">16</a>
+                                        <a href="#">11</a>
+                                    </div> 
+                                </div>
+                            </section>
+                            <section class="features-items py-1">
+                                <h2>Color</h2>
+                                <div class="Color py-3">
+                                    <div>
+                                        <a href="#">black</a>
+                                        <a href="#">navy</a>
+                                        <a href="#">indiego</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">l-red</a>
+                                        <a href="#">off white</a>
+                                        <a href="#">l-blue</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">l-grey</a>
+                                        <a href="#">d-blue</a>
+                                        <a href="#">cafe</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">l-green</a>
+                                        <a href="#">camel</a>
+                                        <a href="#">pink</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">mauve</a>
+                                        <a href="#">orange</a>
+                                        <a href="#">fuchsia</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">Kashmir</a>
+                                        <a href="#">sky</a>
+                                        <a href="#">melon</a>
+                                    </div> <br />
+                                    <div>
+                                        <a href="#">blue</a>
+                                        <a href="#">d-green</a>
+                                        <a href="#">green</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">yellow</a>
+                                        <a href="#">burgundy</a>
+                                        <a href="#">beige</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">white</a>
+                                        <a href="#">olive</a>
+                                        <a href="#">torquoiz</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">d-grey</a>
+                                        <a href="#">lemon</a>
+                                        <a href="#">l-olive</a>
+                                    </div> <br>
+                                    <div>
+                                        <a href="#">D-olive</a>
+                                        <a href="#">mango</a>
+                                        <a href="#">purple</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-9">
+                            <section class="features-items py-1" id="Products">
+                                <h2>Features Items</h2>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12 pb-3 Filter">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Categories">
+                                                    <i class="bi bi-funnel"></i> Filter
+                                            </button>
+    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="Categories" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <section class="features-items py-1 mb-4">
+                                                            <h2>Product Type</h2>
+                                                            <div class="product-type pt-2 pb-4">
+                                                                <div><a (click) = "gitProductsInType(3)">Jeans</a></div>
+                                                                <div><a (click) = "gitProductsInType(3)">Jogger</a></div>
+                                                                <div><a (click) = "gitProductsInType(3)">Pants</a></div>
+                                                                <div><a (click) = "gitProductsInType(3)">Shoes</a></div>
+                                                                <div><a (click) = "gitProductsInType(3)">Short</a></div>
+                                                                <div><a (click) = "gitProductsInType(3)">T-shirt</a></div>
+                                                                <div><a (click) = "gitProductsInType(3)">Sweat pants</a></div>
+                                                            </div>
+                                                        </section>
+                                                        <section class="features-items py-1">
+                                                            <h2>Size</h2>
+                                                            <div class="Size py-3">
+                                                                <div>
+                                                                    <a href="#">31</a>
+                                                                    <a href="#">32</a>
+                                                                    <a href="#">33</a>
+                                                                    <a href="#">34</a>
+                                                                    <a href="#">36</a>
+                                                                    <a href="#">38</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">40</a>
+                                                                    <a href="#">42</a>
+                                                                    <a href="#">44</a>
+                                                                    <a href="#">46</a>
+                                                                    <a href="#">30</a>
+                                                                    <a href="#">29</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">2XL</a>
+                                                                    <a href="#">3XL</a>
+                                                                    <a href="#">L</a>
+                                                                    <a href="#">XL</a>
+                                                                    <a href="#">M</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">5XL</a>
+                                                                    <a href="#">6XL</a>
+                                                                    <a href="#">4XL</a>
+                                                                    <a href="#">6</a>
+                                                                    <a href="#">4</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">8</a>
+                                                                    <a href="#">12</a>
+                                                                    <a href="#">14</a>
+                                                                    <a href="#">16</a>
+                                                                    <a href="#">11</a>
+                                                                    <a href="#">15</a>
+                                                                </div> 
+                                                            </div>
+                                                        </section>
+                                                        <section class="features-items py-1">
+                                                            <h2>Size</h2>
+                                                            <div class="Color py-3">
+                                                                <div>
+                                                                    <a href="#">black</a>
+                                                                    <a href="#">navy</a>
+                                                                    <a href="#">indiego</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">l-red</a>
+                                                                    <a href="#">off white</a>
+                                                                    <a href="#">l-blue</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">l-grey</a>
+                                                                    <a href="#">d-blue</a>
+                                                                    <a href="#">cafe</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">l-green</a>
+                                                                    <a href="#">camel</a>
+                                                                    <a href="#">pink</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">mauve</a>
+                                                                    <a href="#">orange</a>
+                                                                    <a href="#">fuchsia</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">Kashmir</a>
+                                                                    <a href="#">sky</a>
+                                                                    <a href="#">melon</a>
+                                                                </div> <br />
+                                                                <div>
+                                                                    <a href="#">blue</a>
+                                                                    <a href="#">d-green</a>
+                                                                    <a href="#">green</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">yellow</a>
+                                                                    <a href="#">burgundy</a>
+                                                                    <a href="#">beige</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">white</a>
+                                                                    <a href="#">olive</a>
+                                                                    <a href="#">torquoiz</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">d-grey</a>
+                                                                    <a href="#">lemon</a>
+                                                                    <a href="#">l-olive</a>
+                                                                </div> <br>
+                                                                <div>
+                                                                    <a href="#">D-olive</a>
+                                                                    <a href="#">mango</a>
+                                                                    <a href="#">purple</a>
+                                                                </div>
+                                                            </div>
+                                                        </section>                  
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <router-outlet></router-outlet>
+
+                                    </div>
+                                </div>
+                            </section> <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------End Cart Shopping --------------------------- -->
